@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.header{
+    padding: 0 2%;
+    width: 100%;
+    height: 60px;
+    background-color: #212343;
+}
+
+.header img{
+    margin: 19px;
+}
+
+.container-banner{
+    width: 100%;
+    height: 557px;
+    background-image: url('../Assets/header_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0 2%;
+}
+
+.container-banner > .center{
+    height: 100%;
+
+}
+
+.form{
+    padding: 10px;
+    width: 400px;
+    height: calc(100% + 30px);
+    background-color: white;
+    float: right;
+    position: relative;
+    margin-top: 30px;
+    top: -15px;
+    border: 6px solid rgba(100, 100, 100, 0.5);
+    background-clip: padding-box;
+    /*background-origin: (serve para imagens);*/
+}
+
+.form h2{
+    font-weight: normal;
+    color: #999;
+    font-size: 21px;
+}
+
+
+form > span,p.warning{
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+form p{
+    margin: 35px 0;
+}
+
+.input{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.submit{
+    text-align: center;
+}
+
+input[type="submit"]{
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+    width: 280px;
+    height: 56px;
+    background-color: #363A6D;
+    color: white;
+    font-size: 24px;
+    margin: 0 auto;
+    display: inline-block;
+    border-bottom: 5px solid #4A5097;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #323556;
+    
+}
+
+.container-list{
+    float: left;
+    width: 619px;
+    background-color: rgba(33, 35, 67,0.7);
+    height: 270px;
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+.container-list li{
+    color: white;
+    list-style-position: inside;
+    margin: 30px 0;
+    font-size: 17px;
+}
+
+.text{
+    padding: 40px 2%;
+    background-color: rgb(210, 210, 210);
+    text-align: center;
+}
+
+.text h2{
+    font-weight: normal;
+}
+
+.text p{
+    width: 100%;
+    max-width: 768px;
+    display: inline-block;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.arrow {
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -20px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-image: url('../Assets/arrow.png');
+    background-size: 100% 100%;
+}
+
+.section-products{
+    padding: 90px 2%;
+}
+
+.section-products h2{
+    margin-top: 5px;
+    text-align: center;
+    color: #363A6D;
+    font-weight: normal;
+}
+
+.container-products{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.products{
+    width: 33.3%;
+    padding: 30px;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.products:last-child{
+    margin-right: 0;
+}
+
+.products img{
+    width: 70px;
+}
+
+.products p{
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+}
+
+
+.footer{
+    /*clear: both*/
+    padding: 30px 0;
+    border-top: 4px solid #888888;
+    text-align: center;
+    color: #888;
+}
+
+.footer p{
+    margin-top: 1px;
+}
+
+@media screen and (max-width:1133px){
+    
+        .header{
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+            height: auto;
+        }
+
+        .header img{
+            margin:0;
+        }
+
+        .container-banner{
+            width: 100%;
+            height: auto;
+            padding: 40px 2%;
+            text-align: center;
+        }
+
+        .form{
+            padding: 10px;
+            width: 90%;
+            height: 100%;
+            float: none;
+            display: inline-block;
+            position: relative;
+            top: 0;
+            max-width: 400px;
+        }
+
+        .container-list{
+            float: none;
+            width: 90%;
+            max-width: 600px;
+            height: auto;
+            display: inline-block;
+            padding-left: 20px;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .input{
+            width: 100%;
+            height: 55px;
+        }
+        
+      
+        
+        .submit{
+            text-align: center;
+        }
+        
+        input[type="submit"]{
+  
+            max-width: 280px;
+            height: 56px;
+            width: 100%;
+        }
+
+        .products{
+            width: 50%;
+            padding: 30px 0;
+            max-width: 600px;
+        }
+}
+
+@media screen and (max-width:580px){
+    .products{
+        width: 100%;
+    }
+}
